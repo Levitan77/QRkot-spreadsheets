@@ -1,0 +1,6 @@
+MAX_NAME_LENGTH = 100
+MIN_NAME_LENGTH = 5
+MIN_DESCRIPTION_LENGTH = 10
+DATABASE_URL = 'sqlite+aiosqlite:///./cat_charity.db'
+APP_TITLE = 'Cat Charity'
+MIN_PASSWORD_LENGTH = 3
