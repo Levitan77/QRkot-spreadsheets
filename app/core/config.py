@@ -22,8 +22,7 @@ class Settings(BaseSettings):
     auth_provider_x509_cert_url: Optional[str] = None
     client_x509_cert_url: Optional[str] = None
     client_x509_cert_url: Optional[str] = None
-
-    email: Optional[str]
+    email: Optional[str] = 'example@email.ru'
 
 
 settings = Settings()
