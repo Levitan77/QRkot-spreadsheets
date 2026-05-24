@@ -2,6 +2,7 @@ from aiogoogle import Aiogoogle
 from aiogoogle.auth.creds import ServiceAccountCreds
 
 from app.core.config import settings
+from app.core.constants import GOOGLE_API_AUTH_URL
 
 INFO = {
     'type': settings.type,
@@ -17,8 +18,8 @@ INFO = {
 }
 
 SCOPES = [
-    'https://www.googleapis.com/auth/spreadsheets',
-    'https://www.googleapis.com/auth/drive',
+    GOOGLE_API_AUTH_URL + 'spreadsheets',
+    GOOGLE_API_AUTH_URL + 'drive',
 ]
 
 cred = ServiceAccountCreds(scopes=SCOPES, **INFO)
