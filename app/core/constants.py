@@ -5,7 +5,7 @@ DATABASE_URL = 'sqlite+aiosqlite:///./cat_charity.db'
 APP_TITLE = 'Cat Charity'
 MIN_PASSWORD_LENGTH = 3
 
-GOOGLE_API_AUTH_URL = 'https://www.googleapis.com/auth/'
+GOOGLE_API_AUTH_URL = 'https://www.googleapis.com/auth'
 SPREADSHEET_BODY = {
     'properties': {
         'title': 'Отчёт от ',

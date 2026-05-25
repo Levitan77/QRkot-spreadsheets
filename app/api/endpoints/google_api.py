@@ -40,7 +40,7 @@ async def get_report(
         )
 
         return {'url': spreadsheet_url}
-    except Exception as error:
+    except TypeError as error:
         raise HTTPException(
             status_code=HTTPStatus.INTERNAL_SERVER_ERROR,
             detail=f'Ошибка при попытке обновления данных: {error}'

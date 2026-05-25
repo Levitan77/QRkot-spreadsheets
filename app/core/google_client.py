@@ -18,8 +18,8 @@ INFO = {
 }
 
 SCOPES = [
-    GOOGLE_API_AUTH_URL + 'spreadsheets',
-    GOOGLE_API_AUTH_URL + 'drive',
+    f'{GOOGLE_API_AUTH_URL}/spreadsheets',
+    f'{GOOGLE_API_AUTH_URL}/drive',
 ]
 
 cred = ServiceAccountCreds(scopes=SCOPES, **INFO)
